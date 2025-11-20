@@ -1,0 +1,1 @@
+using Providers.Domain; using Providers.Infrastructure; var b=WebApplication.CreateBuilder(args); b.Services.AddSingleton<IProviderRepository>(new ProviderRepository(b.Configuration.GetConnectionString("Default")!)); b.Services.AddControllers(); var app=b.Build(); app.MapControllers(); app.Run();
