@@ -1,0 +1,12 @@
+
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Providers.Domain\Providers.Domain.csproj" />
+    <ProjectReference Include="..\Providers.Infrastructure\Providers.Infrastructure.csproj" />
+    <PackageReference Include="Dapper" Version="2.0.123"/>
+    <PackageReference Include="MySql.Data" Version="8.1.1"/>
+  </ItemGroup>
+</Project>
