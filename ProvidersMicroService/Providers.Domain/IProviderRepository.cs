@@ -1,1 +1,0 @@
-using FluentResults; using System.Collections.Generic; using System.Threading.Tasks; namespace Providers.Domain; public interface IProviderRepository{ Task<Result<Provider>> CreateAsync(Provider p); Task<Result<Provider>> UpdateAsync(Provider p); Task<Result<Provider?>> GetAsync(int id); Task<Result<IEnumerable<Provider>>> ListAsync(); Task<Result<bool>> DeleteAsync(int id);} 
